@@ -1,5 +1,7 @@
 package Issue2;
 
+import java.io.File;
+
 public interface Documentable {
-    void generateDocument(); 
-} 
+    void setDocument(File pdfFile);
+}

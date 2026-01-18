@@ -26,7 +26,7 @@ public abstract class KaryaIlmiah {
     }
 
     public void displayInfo() {
-        System.out.printf("Judul Skripsi:%s,\n Skripsi Tahun: (%d)", judul, tahun);
+        System.out.printf("Judul Skripsi:%s,\nSkripsi Tahun: %d\n", judul, tahun);
     }
     public abstract void validate();
 }

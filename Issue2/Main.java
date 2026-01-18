@@ -15,7 +15,8 @@ public class Main {
         skripsi.validate();
 
         Documentable doc = (Documentable) skripsi;
-        doc.generateDocument();
+        // doc.generateDocument();
+        // it looks like i cannot input file directly here, so i will skip this part (this is just my imagination)
 
         Archivable arc = (Archivable) skripsi;
         arc.archive();
