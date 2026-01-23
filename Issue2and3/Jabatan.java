@@ -1,4 +1,4 @@
-package Issue2;
+package Issue2and3;
 
 public enum Jabatan {
     DOSEN("Dosen"),

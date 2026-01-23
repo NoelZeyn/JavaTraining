@@ -1,9 +1,9 @@
-package Issue2;
+package Issue2and3;
 
 public abstract class KaryaIlmiah {
     private String judul;
     private int tahun;
-    private Jabatan jabatan;
+    private final Jabatan jabatan;
 
     protected KaryaIlmiah(String judul, int tahun, Jabatan jabatan) {
         this.judul = judul;

@@ -1,4 +1,4 @@
-package Issue2;
+package Issue2and3;
 
 import java.io.File;
 import java.io.IOException;
