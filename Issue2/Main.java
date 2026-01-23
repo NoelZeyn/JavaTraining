@@ -3,18 +3,18 @@ package Issue2;
 public class Main {
 
     public static void main(String[] args) {
-
+        Jabatan jabatan = Jabatan.MAHASISWA;
         // Polymorphism KaryaIlmiah Induk, Skripsi anak
         KaryaIlmiah skripsi = new Skripsi(
-            "PERBANDINGAN KINERJA ALGORITMA YOLOV11 ATTENTION DAN FASTER R-CNN " +
-            "DALAM MENDETEKSI DAN MENGKLASIFIKASI WARNA JEEP DI KAWASAN WISATA GUNUNG BROMO",
-            2025
+                "PERBANDINGAN KINERJA ALGORITMA YOLOV11 ATTENTION DAN FASTER R-CNN "
+                + "DALAM MENDETEKSI DAN MENGKLASIFIKASI WARNA JEEP DI KAWASAN WISATA GUNUNG BROMO",
+                2025, jabatan
         );
 
         skripsi.displayInfo();
         skripsi.validate();
 
-        Documentable doc = (Documentable) skripsi;
+        // Documentable doc = (Documentable) skripsi;
         // doc.generateDocument();
         // it looks like i cannot input file directly here, so i will skip this part (this is just my imagination)
 

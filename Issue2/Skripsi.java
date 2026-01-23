@@ -7,10 +7,10 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
 public class Skripsi extends KaryaIlmiah implements Documentable, Archivable {
-
+    
     private File storedDocument;
-    public Skripsi(String judul, int tahun) {
-        super(judul, tahun);
+    public Skripsi(String judul, int tahun, Jabatan jabatan) {
+        super(judul, tahun, jabatan);
     }
 
     @Override

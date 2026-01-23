@@ -3,10 +3,12 @@ package Issue2;
 public abstract class KaryaIlmiah {
     private String judul;
     private int tahun;
+    private Jabatan jabatan;
 
-    protected KaryaIlmiah(String judul, int tahun) {
+    protected KaryaIlmiah(String judul, int tahun, Jabatan jabatan) {
         this.judul = judul;
         this.tahun = tahun;
+        this.jabatan = jabatan;
     }
 
     public String getJudul() {
@@ -15,6 +17,10 @@ public abstract class KaryaIlmiah {
     
     public int getTahun() {
         return tahun;
+    }
+
+    public Jabatan getJabatan() {
+        return jabatan;
     }
 
     public void setJudul(String judul) {
@@ -26,7 +32,7 @@ public abstract class KaryaIlmiah {
     }
 
     public void displayInfo() {
-        System.out.printf("Judul Skripsi:%s,\nSkripsi Tahun: %d\n", judul, tahun);
+        System.out.printf("Judul Skripsi:%s,\nSkripsi Tahun: %d\nSkripsi Jabatan: %s\n", judul, tahun, jabatan.getLabel());
     }
     public abstract void validate();
 }
